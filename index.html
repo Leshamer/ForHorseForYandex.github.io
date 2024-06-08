@@ -46,44 +46,140 @@
                 </div>
             </div>
 
-            <div class="running_line"><div class="running_content"></div></div>
+            <div class="running_line"><div class="running_content"><span>Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели! • Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели!</span></div></div>
 
-            <div class="middle_content">
-                <div class="first_part">
-                    <div class="lecture"></div>
-                    <div class="rounded_img"></div>
-                </div>
+        <div class="middle_content">
+            <div class="first_part">
+                    <div class="lecture">
+                        <span id="part1">Чтобы поддержать Международный васюкинский турнир</span> 
+                        <span id="part2">посетите лекцию на тему: <a href="">«Плодотворная дебютная идея»</a></span>
+                    </div>
+                    <div class="rounded_img"><img class="mans_playing" src="img/mans_playing.png" alt=""></div>
+            </div>
                 <div class="second_part">
-                    <div class="explosive_photo"></div>
-                    <div class="table content">
-                        <div class="table_title"></div>
-                        <div class="table"></div>
-                        <div class="link"></div>
+                    <div class="explosive_photo"><img src="img/man_chess.png" alt=""></div>
+                    <div class="table_content">
+                        <div class="table_title">и Сеанс <a href="">одновременной игры в шахматы на 160 досках</a> гроссмейстера О. Бендера</div>
+                        <div class="table">
+                            <div>Место проведения:</div>
+                            <div>Клуб «Картонажник»</div>
+                            <div>Дата и время мероприятия:</div>
+                            <div>22 июня 1927 г. в 18:00</div>
+                            <div>Стоимость входных билетов:</div>
+                            <div>20 коп.</div>
+                            <div>Плата за игру:</div>
+                            <div>50 коп.</div>
+                            <div>Взнос на телеграммы:</div>
+                            <div><span>100 руб.</span>21 руб. 16 коп.</div>
+                        </div>
+                        <div class="link"><a href="">По всем вопросам обращаться в администрацию к К. Михельсону</a></div>
+                    </div>
+                </div>
+
+            <div class="stages">
+                <div class="stages_titles">
+                    <div class="stage_title">Этапы преображения<div class="stage_title_wrapper"><div class="stage_title">Васюков</div><div class="stage_post_title"><a href="">Будущие источники обогащения васюкинцев</a></div></div></div>
+                </div>
+                <div class="stages_field">
+                    <div class="stage_1">
+                        <span class="stage_number">1</span>
+                        <span class="stage_text">Строительство железнодорожной магистрали Москва-Васюки</span>
+                    </div>
+                    <div class="stage_2">
+                        <span class="stage_number">2</span>
+                        <span class="stage_text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</span>
+                    </div>
+                    <div class="stage_3">
+                        <span class="stage_number">3</span>
+                        <span class="stage_text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</span>
+                    </div>
+                    <div class="stage_4">
+                        <span class="stage_number">4</span>
+                        <span class="stage_text">Строительство дворца для турнира</span>
+                    </div>
+                    <div class="stage_5">
+                        <span class="stage_number">5</span>
+                        <span class="stage_text">Размещение гаражей для гостевого автотранспорта</span>
+                    </div>
+                    <div class="stage_6">
+                        <span class="stage_number">6</span>
+                        <span class="stage_text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</span>
+                    </div>
+                    <div class="stage_7">
+                        <span class="stage_number">7</span>
+                        <span class="stage_text" id="long">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</span>
+                        <img class="plane" src="img/plane.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="stages">
-                <div class="stages_title"></div>
-                <div class="stages_field"></div>
+            <div class="participants_box">
+                <div class="participants_title_box">
+                    <div class="participants_title">Участники турнира</div>
+                    <div class="participants_switcher">
+                        <button class="left_button" id="prevButton">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+                                <path d="M10.5382 18.4615L2.07666 9.99995L10.5382 1.53841" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+                        <span class="participants_number"></span>
+                        <button class="right_button" id="nextButton">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+                                <path d="M1.4618 1.53839L9.92334 9.99993L1.4618 18.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="participants" id="participants">
+                    <div class="participants_person_box" id="participant1">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Хозе-Рауль Капабланка</div>
+                        <div class="participants_description">Чемпион мира по шахматам</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                    <div class="participants_person_box" id="participant2">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Эммануил Ласкер</div>
+                        <div class="participants_description">Чемпион мира по шахматам</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                    <div class="participants_person_box" id="participant3">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Александр Алехин</div>
+                        <div class="participants_description">Чемпион мира по шахматам</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                    <div class="participants_person_box" id="participant4">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Арон Нимцович</div>
+                        <div class="participants_description">Чемпион мира по шахматам</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                    <div class="participants_person_box" id="participant5">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Рихард Рети</div>
+                        <div class="participants_description">Чемпион мира по шахматам</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                    <div class="participants_person_box" id="participant6">
+                        <div class="participants_foto"><img src="img/participants_foto.png" alt=""></div>
+                        <div class="participants_name">Остап Бендер</div>
+                        <div class="participants_description">Гроссмейстер</div>
+                        <div class="detailes_button"><a href="">Подробнее</a></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="participants">
-                <div class="participants_foto"></div>
-                <div class="participants_name"></div>
-                <div class="participants_description"></div>
-                <div class="detailes_button"></div>
-            </div>
-
-            
-            <div class="running_line"></div>
-
+        </div>
+        
+        <div class="running_line"><div class="running_content"><span>Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели! • Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели!</span></div></div>
 
             <footer>
-                <div class="explanation"></div>
+                <div class="explanation">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</div>
             </footer>
 
         </main>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

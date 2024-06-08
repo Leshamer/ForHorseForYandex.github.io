@@ -183,10 +183,442 @@ body{
 
 /*---------------------------------------------------------------------------------------------------*/
 
+.running_line{
+    display: flex;
+    align-items: center;
+    background-color: #F54932;
+    width: 2,335px;
+    height: 60pxpx;
+    top: -1549px;
+    left: -2972px;
+    padding: 10px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.running_content{
+    font-family: Merriweather;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+    animation: run 30s linear infinite;
+}
+@keyframes run {
+    from {
+       transform: translateX(-190px);
+    }
+    to {
+       transform: translateX(-2305px);
+    }
+ }
+
+ .middle_content{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 1366px;
+ }
+
+ .first_part{
+     display: flex;
+     align-items: center;
+     margin: 80px 72px 64px 72px;
+     justify-content: space-between;
+    }
+
+ .lecture{
+    max-width: 764px;
+    font-family: Merriweather;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+    text-align: left;
+    text-transform: uppercase;
+ }
+
+ .lecture a{
+    font-weight: 700;
+    color: #F54932;
+    text-decoration: none;
+ }
+
+ .second_part{
+    display: flex;
+    width: 100%;
+    max-height: 527px;
+    justify-content: center;
+ }
+
+ .explosive_photo img{
+    display: flex;
+    margin-right: 17px;
+    transform: translate(0, -2em);
+ }
+
+ .table_content{
+    max-width: 704px;
+ }
+
+ .table_title{
+    font-family: Merriweather;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+    text-align: left;
+ }
+
+ .table_title a{
+    font-weight: 700;
+    color: #F54932;
+    text-decoration: none;
+ }
+
+ .table{
+    margin: 60px 0 48px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
 
 
+ .table div:nth-child(odd):not(:nth-child(1)):not(:nth-child(9)) {
+    font-family: Golos Text;
+    padding: 16px 16px 16px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #313131;
+    opacity: 70%;
+    border-right: 1px solid grey;
+    border-bottom: 2px solid grey;
+}
 
-/*---------------------------------------------------------------------------------------------------*/
+.table div:nth-child(even):not(:nth-child(2)):not(:nth-child(10)) {
+    font-family: Golos Text;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    border-left: 1px solid rgba(128, 128, 128, 0.7);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.7);
+}
+
+.table div:nth-child(1){
+    font-family: Golos Text;
+    padding: 0 16px 16px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #313131;
+    opacity: 70%;
+    border-right: 1px solid grey;
+    border-bottom: 2px solid grey;
+}
+.table div:nth-child(9){
+    font-family: Golos Text;
+    padding: 16px 16px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #313131;
+    opacity: 70%;
+    border-right: 1px solid grey;
+}
+.table div:nth-child(10){
+    font-family: Golos Text;
+    padding: 16px 0 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #313131;
+    border-left: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.table div:nth-child(10) span{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    padding-right: 12px;
+}
+
+.table div:nth-child(2){
+    font-family: Golos Text;
+    padding: 0 16px 16px 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    border-left: 1px solid rgba(128, 128, 128, 0.7);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.7);
+}
+
+.link a{
+    font-family: Golos Text;
+    color: #3057A2;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.stages{
+    display: flex;
+    flex-direction: column;
+    max-width: 1222px;
+    margin: 200px auto;
+
+}
+
+.stages_titles{
+    display: flex;
+    max-width: 806px;
+}
+.stage_title{
+    display: inline-block;
+    font-family: Merriweather;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 64.8px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.stage_title_wrapper{
+    display: flex;
+    align-items: center;
+}
+.stage_post_title{
+    font-family: Golos Text;
+    margin-left: 22px;
+    max-width: 280px;
+   
+}
+.stage_post_title a{
+    color: #3057A2;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+}
+
+.stages_field{
+    display: grid;
+    margin-top: 54px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 112px 112px 136px;
+    grid-template-areas: 
+                "a b c"
+                "d e c"
+                "f g g";
+    gap: 20px;
+}
+.stages_field > div{
+    display: flex;
+    background-image: url(../img/paper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stage_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-family: Golos Text;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.stage_text{
+    display: block;
+    margin: 20px 20px 20px 0px;
+    max-width: 302px;
+    font-family: Golos Text;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+#long{
+    max-width: 446px;
+}
+
+.stage_1{
+    grid-area: a;
+}
+.stage_2{
+    grid-area: b;
+}
+.stage_3{
+    grid-area: c;
+}
+.stage_4{
+    grid-area: d;
+}
+.stage_5{
+    grid-area: e;
+}
+.stage_6{
+    grid-area: f;
+}
+.stage_7{
+    grid-area: g;
+    position: relative;
+}
+
+.plane{
+    position: absolute;
+    top: -6em;
+    right: -4em;
+}
+
+.participants_box{
+    display: flex;
+    width: 100%;
+    max-width: 1222px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.participants_title_box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.participants_title{
+    font-family: Merriweather;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 64.8px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.participants_switcher{
+    display: flex;
+    align-items: center;
+}
+
+.participants_switcher button{
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.participants_number{
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #313131;
+    margin: 0 14px;
+}
+
+.participants_number span{
+    opacity: 60%;
+}
+
+.participants{
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 60px 0 140px 0;
+    width: 100%;
+    position: relative;
+}
+
+.participants_person_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.participants_foto img{
+    max-width: 100%;
+    height: auto;
+}
+
+.participants_name{
+    font-family: Golos Text;
+    margin-top: 26px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.participants_description{
+    font-family: Golos Text;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left; 
+    opacity: 60%;
+}
+
+.detailes_button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 35px;
+    border-radius: 62px;
+    border: 1px solid #3057A2;
+}
+
+.detailes_button a{
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    color: #3057A2;
+    text-decoration: none;
+}
+
+footer{
+    background: #E9DED4;
+    padding: 40px 72px 72px 72px;
+}
+.explanation{
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    opacity: 60%;
+}
 
 
 /*----------Adaptation----------*/
@@ -315,6 +747,68 @@ body{
         line-height: 23.4px;
         text-align: left;
     }
+    .running_content{
+        font-size: 16px;
+    }
+
+    .middle_content{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        max-width: 1366px;
+     }
+    
+     .first_part{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 48px 20px 34px 20px;
+         justify-content: space-between;
+        }
+    
+     .lecture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 764px;
+        font-family: Merriweather;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 37.8px;
+        text-align: left;
+        text-transform: uppercase;
+     }
+    
+     .lecture a{
+        font-weight: 700;
+        color: #F54932;
+        text-decoration: none;
+    }
+    .mans_playing{
+        width: 100%;
+        padding: 2px 0;
+
+    }
+
+    .rounded_img {
+        display: block;
+        box-sizing: border-box;
+        max-width: 95%;
+        margin: 24px 0px;
+        order: 1; 
+    }
+
+    .lecture > span {
+        order: 2; 
+    }
+
+    .lecture #part1 {
+        order: 1; 
+    }
+
+    .lecture #part2 {
+        order: 3; 
+    }
 }
 /*-Laptop*/
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -365,4 +859,11 @@ body{
         line-height: 18px;
         margin-top: 12px;
     }
+    .lecture{
+        font-size: 25px;
+        line-height: 35px;
+     }
+     .mans_playing{
+        max-width: 250px;
+     }
 }
