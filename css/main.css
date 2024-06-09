@@ -78,9 +78,10 @@ body{
 }
 .buttons button{
     display: block;
+    cursor: pointer;
     width: 263px;
     padding: 10px 50px; 
-    border: 2px solid black;
+    border: 2px solid #1F1F1F;
     border-radius: 66px;
     font-family: Golos Text;
     font-size: 16px;
@@ -89,7 +90,7 @@ body{
     text-align: center;
 }
 .support button{
-    background-color: black;
+    background-color: #1F1F1F;
     color: white;
     transition:all 0.2s ease-out;
 }
@@ -758,7 +759,7 @@ footer{
         box-sizing: border-box;
         width: 335px;
         padding: 14px 30px; 
-        border: 2px solid black;
+        border: 2px solid 1F1F1F;
         border-radius: 66px;
         font-family: Golos Text;
         font-size: 16px;
@@ -767,7 +768,7 @@ footer{
         text-align: center;
     }
     .support button{
-        background-color: black;
+        background-color: 1F1F1F;
         color: white;
     }
     .tournament_info button{
@@ -1253,7 +1254,7 @@ footer{
     
     footer{
         background: #E9DED4;
-        padding: 40px 72px 72px 72px;
+        padding: 40px 20px 60px 20px;
     }
     .explanation{
         font-family: Golos Text;

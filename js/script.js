@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', moveElements);
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    const supportButton = document.querySelector('.support_button')
+    const tournamentInfo = document.querySelector('.tournament_info_button')
+    const infoAbout = document.getElementById('info_about');
+    const support = document.getElementById('support');
+
     const stagesField = document.querySelector('.stages_field');
     const prevStageButton = document.getElementById('prevStageButton');
     const nextStageButton = document.getElementById('nextStageButton');
@@ -57,6 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let activeIndex = 1;
 
     circlesChangerUpdate(activeIndex)
+
+    supportButton.addEventListener('click', function() {
+        support.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    tournamentInfo.addEventListener('click', function() {
+        infoAbout.scrollIntoView({ behavior: 'smooth' });
+    });
 
     function StageToIndex(index) {
         const participantElement = document.getElementById(`stage_${index}`);
